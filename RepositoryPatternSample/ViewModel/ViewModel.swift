@@ -8,7 +8,7 @@
 import Foundation
 
 protocol ViewModelInput {
-    
+    func requestUserInfo()
 }
 
 protocol ViewModelOutput {
@@ -23,4 +23,16 @@ protocol ViewModelType {
 class ViewModel: ViewModelType, ViewModelInput, ViewModelOutput {
     var inputs: ViewModelInput { self }
     var outputs: ViewModelOutput { self }
+    
+    var service: ServiceProtocol
+    
+    init(service: ServiceProtocol) {
+        self.service = service
+    }
+
+    func requestUserInfo() {
+        service.requestService { userInfo in
+            print(userInfo)
+        }
+    }
 }
