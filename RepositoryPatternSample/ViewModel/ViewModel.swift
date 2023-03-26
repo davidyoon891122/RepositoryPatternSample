@@ -32,7 +32,24 @@ class ViewModel: ViewModelType, ViewModelInput, ViewModelOutput {
 
     func requestUserInfo() {
         service.requestService { userInfo in
-            print(userInfo)
+            print(userInfo.name)
+            print(userInfo.address.street)
+            print(userInfo.address.city)
+            print(userInfo.address.zipcode)
+            print(userInfo.address.geo.lat)
+            print(userInfo.address.geo.lng)
         }
+        
+        service.requestSecondService { userInfo in
+            if let user = userInfo.results.first {
+                print("\(user.name.first) \(user.name.last)")
+                print(user.location.street.name)
+                print(user.location.city)
+                print(user.location.postcode)
+                print(user.location.coordinates.latitude)
+                print(user.location.coordinates.longitude)
+            }
+        }
+        
     }
 }

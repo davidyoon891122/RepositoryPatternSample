@@ -17,6 +17,7 @@
 		49D9E0FC29D10A2D00E58971 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 49D9E0FB29D10A2D00E58971 /* Alamofire */; };
 		49D9E0FF29D10A3B00E58971 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 49D9E0FE29D10A3B00E58971 /* SnapKit */; };
 		49D9E10629D10ACA00E58971 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D9E10529D10ACA00E58971 /* Service.swift */; };
+		49D9E10829D10E4800E58971 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D9E10729D10E4800E58971 /* Users.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		49D9E0F629D1074400E58971 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		49D9E0F829D1081600E58971 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		49D9E10529D10ACA00E58971 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		49D9E10729D10E4800E58971 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				49D9E0F629D1074400E58971 /* User.swift */,
+				49D9E10729D10E4800E58971 /* Users.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				49D9E0E329D106D100E58971 /* AppDelegate.swift in Sources */,
 				49D9E0E529D106D100E58971 /* SceneDelegate.swift in Sources */,
 				49D9E10629D10ACA00E58971 /* Service.swift in Sources */,
+				49D9E10829D10E4800E58971 /* Users.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

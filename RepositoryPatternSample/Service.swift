@@ -10,6 +10,7 @@ import Alamofire
 
 protocol ServiceProtocol {
     func requestService(completion: @escaping ((User) -> ()))
+    func requestSecondService(completion: @escaping ((Users) -> ()))
 }
 
 class UserService: ServiceProtocol {
@@ -18,6 +19,21 @@ class UserService: ServiceProtocol {
         
         AF.request(url, method: .get)
             .responseDecodable(of: User.self) { response in
+                switch response.result {
+                case .success(let response):
+                    print(response)
+                    completion(response)
+                case .failure(let error):
+                    print(error)
+                }
+            }
+    }
+    
+    func requestSecondService(completion: @escaping ((Users) -> ())) {
+        let url = URL(string: "https://randomuser.me/api/")!
+        
+        AF.request(url, method: .get)
+            .responseDecodable(of: Users.self) { response in
                 switch response.result {
                 case .success(let response):
                     print(response)
