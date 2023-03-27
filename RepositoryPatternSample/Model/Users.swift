@@ -8,7 +8,7 @@
 import Foundation
 
 struct Users: Codable {
-    let results: [Result]
+    let results: [Results]
     let info: Info
 }
 
@@ -18,7 +18,7 @@ struct Info: Codable {
     let version: String
 }
 
-struct Result: Codable {
+struct Results: Codable {
     let gender: String
     let name: Name
     let location: Location

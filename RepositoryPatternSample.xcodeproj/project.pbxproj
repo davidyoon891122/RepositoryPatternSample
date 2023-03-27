@@ -18,6 +18,10 @@
 		49D9E0FF29D10A3B00E58971 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 49D9E0FE29D10A3B00E58971 /* SnapKit */; };
 		49D9E10629D10ACA00E58971 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D9E10529D10ACA00E58971 /* Service.swift */; };
 		49D9E10829D10E4800E58971 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D9E10729D10E4800E58971 /* Users.swift */; };
+		49D9E10A29D1126800E58971 /* DomainUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D9E10929D1126800E58971 /* DomainUser.swift */; };
+		49D9E10D29D113C300E58971 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D9E10C29D113C300E58971 /* Repository.swift */; };
+		49D9E10F29D117C900E58971 /* FirstRequestImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D9E10E29D117C900E58971 /* FirstRequestImp.swift */; };
+		49D9E11129D11E3500E58971 /* SecondRequestImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D9E11029D11E3500E58971 /* SecondRequestImp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		49D9E0F829D1081600E58971 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		49D9E10529D10ACA00E58971 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		49D9E10729D10E4800E58971 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		49D9E10929D1126800E58971 /* DomainUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainUser.swift; sourceTree = "<group>"; };
+		49D9E10C29D113C300E58971 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		49D9E10E29D117C900E58971 /* FirstRequestImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRequestImp.swift; sourceTree = "<group>"; };
+		49D9E11029D11E3500E58971 /* SecondRequestImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondRequestImp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +79,10 @@
 				49D9E10229D10A5300E58971 /* Resource */,
 				49D9E10429D10A6500E58971 /* Model */,
 				49D9E10329D10A5E00E58971 /* ViewModel */,
-				49D9E10529D10ACA00E58971 /* Service.swift */,
+				49D9E10B29D113B700E58971 /* Service */,
+				49D9E10C29D113C300E58971 /* Repository.swift */,
+				49D9E10E29D117C900E58971 /* FirstRequestImp.swift */,
+				49D9E11029D11E3500E58971 /* SecondRequestImp.swift */,
 			);
 			path = RepositoryPatternSample;
 			sourceTree = "<group>";
@@ -116,8 +127,17 @@
 			children = (
 				49D9E0F629D1074400E58971 /* User.swift */,
 				49D9E10729D10E4800E58971 /* Users.swift */,
+				49D9E10929D1126800E58971 /* DomainUser.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		49D9E10B29D113B700E58971 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				49D9E10529D10ACA00E58971 /* Service.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,13 +218,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49D9E11129D11E3500E58971 /* SecondRequestImp.swift in Sources */,
 				49D9E0F929D1081600E58971 /* ViewModel.swift in Sources */,
+				49D9E10F29D117C900E58971 /* FirstRequestImp.swift in Sources */,
 				49D9E0F729D1074400E58971 /* User.swift in Sources */,
+				49D9E10A29D1126800E58971 /* DomainUser.swift in Sources */,
 				49D9E0E729D106D100E58971 /* ViewController.swift in Sources */,
 				49D9E0E329D106D100E58971 /* AppDelegate.swift in Sources */,
 				49D9E0E529D106D100E58971 /* SceneDelegate.swift in Sources */,
 				49D9E10629D10ACA00E58971 /* Service.swift in Sources */,
 				49D9E10829D10E4800E58971 /* Users.swift in Sources */,
+				49D9E10D29D113C300E58971 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

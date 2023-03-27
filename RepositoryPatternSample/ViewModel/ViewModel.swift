@@ -31,24 +31,39 @@ class ViewModel: ViewModelType, ViewModelInput, ViewModelOutput {
     }
 
     func requestUserInfo() {
-        service.requestService { userInfo in
-            print(userInfo.name)
-            print(userInfo.address.street)
-            print(userInfo.address.city)
-            print(userInfo.address.zipcode)
-            print(userInfo.address.geo.lat)
-            print(userInfo.address.geo.lng)
+        service.requestService { result in
+            switch result {
+            case .success(let userInfo):
+                print(userInfo.name)
+                print(userInfo.address.street)
+                print(userInfo.address.city)
+                print(userInfo.address.zipcode)
+                print(userInfo.address.geo.lat)
+                print(userInfo.address.geo.lng)
+            case .failure(let error):
+                print(error)
+            }
+
         }
         
-        service.requestSecondService { userInfo in
-            if let user = userInfo.results.first {
-                print("\(user.name.first) \(user.name.last)")
-                print(user.location.street.name)
-                print(user.location.city)
-                print(user.location.postcode)
-                print(user.location.coordinates.latitude)
-                print(user.location.coordinates.longitude)
+        service.requestSecondService { result in
+            switch result {
+            case .success(let userInfo):
+                if let user = userInfo.results.first {
+                    print("\(user.name.first) \(user.name.last)")
+                    print(user.location.street.name)
+                    print(user.location.city)
+                    print(user.location.postcode)
+                    print(user.location.coordinates.latitude)
+                    print(user.location.coordinates.longitude)
+                }
+            case .failure(let error):
+                print(error)
             }
+            
+            
+            
+
         }
         
     }
