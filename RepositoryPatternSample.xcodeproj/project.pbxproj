@@ -80,9 +80,7 @@
 				49D9E10429D10A6500E58971 /* Model */,
 				49D9E10329D10A5E00E58971 /* ViewModel */,
 				49D9E10B29D113B700E58971 /* Service */,
-				49D9E10C29D113C300E58971 /* Repository.swift */,
-				49D9E10E29D117C900E58971 /* FirstRequestImp.swift */,
-				49D9E11029D11E3500E58971 /* SecondRequestImp.swift */,
+				49D9E11229D1239400E58971 /* Repository */,
 			);
 			path = RepositoryPatternSample;
 			sourceTree = "<group>";
@@ -138,6 +136,16 @@
 				49D9E10529D10ACA00E58971 /* Service.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		49D9E11229D1239400E58971 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				49D9E10C29D113C300E58971 /* Repository.swift */,
+				49D9E10E29D117C900E58971 /* FirstRequestImp.swift */,
+				49D9E11029D11E3500E58971 /* SecondRequestImp.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

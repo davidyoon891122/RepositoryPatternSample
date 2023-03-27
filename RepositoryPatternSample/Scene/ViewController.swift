@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    private var viewModel: ViewModelType = ViewModel(service: UserService())
+    private var viewModel: ViewModelType = ViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
